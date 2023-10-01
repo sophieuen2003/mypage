@@ -1,16 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
 }
 header {
   background-color: rgb(44, 44, 61, 0.9);
   height: 80px;
   width: 100%;
   position: fixed;
-
 }
 h1 {
-  color: white;
+  color: #ffffff;
+  position: absolute;
+  left: 120px;
+  top: 0;
+  line-height: 80px;
+  /* background-image: url(images/logo.png);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1000px; */
+}
+header h2 {
+  color: #ffffff;
   position: absolute;
   left: 120px;
   top: 0;
@@ -27,7 +41,7 @@ header li {
   margin-right: 4vw;
 }
 header a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 header a:hover {
@@ -35,7 +49,7 @@ header a:hover {
 }
 .cover {
   background-color: antiquewhite;
-  color: white;
+  color: #ffffff;
   height: 95vh;
   background-image: url("images/beach-1.jpg");
   background-repeat: no-repeat;
@@ -47,7 +61,7 @@ header a:hover {
   justify-content: center;
 }
 .cover h3 {
-    color: #e2dd90;
+  color: #e2dd90;
   font-size: 40px;
   margin-top: 10px;
 }
@@ -61,7 +75,7 @@ header a:hover {
   margin: 25px 0;
 }
 .cover a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   border: 1px solid #acacac;
   padding: 10px 20px;
@@ -69,7 +83,7 @@ header a:hover {
 }
 .motto {
   background-color: #2e598a;
-  color: white;
+  color: #ffffff;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -96,18 +110,19 @@ footer {
   font-size: 18px;
 }
 /* .contact img {
-    width: 50%;
+  width: 50%;
 } */
+
 .profile {
-    width: 50%;
+  width: 50%;
 }
-.profile img{
-    width: 5%;
-    padding: 0 18px 18px 25px;
+.profile img {
+  width: 5%;
+  padding: 0 18px 18px 25px;
 }
 .profile p {
-    line-height: 1.8em;
-    padding: 18px 18px 5px 25px;
+  line-height: 1.8em;
+  padding: 18px 18px 5px 25px;
 }
 .AboutMe {
   display: flex;
@@ -117,7 +132,7 @@ footer {
 }
 .introduction {
   width: 50%;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +146,17 @@ footer {
   text-align: center;
   line-height: 2em;
 }
-section .important {
+.table img {
+  width: 50%;
+  color: #80b0cf;
+}
+.table a {
+  text-decoration: none;
+}
+.table a:hover {
+  text-decoration: underline;
+}
+/* section .important {
   display: flex;
   background-color: #80b0cf;
   align-items: center;
@@ -165,7 +190,7 @@ section .description {
 .description p {
   font-size: 16px;
   line-height: 1.6em;
-}
+} */
 .collection {
   background-color: #ffffff;
   display: flex;
@@ -197,21 +222,75 @@ section .description {
   padding: 5px 10px;
   border-radius: 5px;
 }
+.form {
+  padding-top: 1000px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 60px, 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form p {
+  margin-bottom: 20px;
+}
+.form input,
+.form button {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #949d9a;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form input {
+  width: 200px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-top: 7%;
+}
+
+.form button {
+  width: 80px;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+}
+input::placeholder {
+  color: #b8b8b8;
+}
+input::focus {
+  outline: none;
+  border-color: #e0e9a3;
+}
 .menu {
   display: none;
 }
 
-
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* 響應式設計語法 */
@@ -229,7 +308,7 @@ section .description {
   .menu {
     display: block;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     font-size: 35px;
     position: absolute;
     top: 15px;
