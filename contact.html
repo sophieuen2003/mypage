@@ -11,44 +11,56 @@
 </head>
 
 <body>
-    <header>
-        <bottom class="menu">&#9776</bottom>
-        <h2><a href="index.html">聯絡資訊</a></h2>
-        <nav>
-            <ul>
-                <li><a href="index.html#cover">首頁</a></li>
-                <li><a href="aboutMe.html">關於我</a></li>
-                <li><a href="index.html#collection">作品集</a></li>
-                <li><a href="#contact">聯絡資訊</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <bottom class="menu">&#9776</bottom>
+                <h2><a href="index.html">聯絡資訊</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#cover">首頁</a></li>
+                        <li><a href="aboutMe.html">關於我</a></li>
+                        <li><a href="index.html#collection">作品集</a></li>
+                        <li><a href="#contact">聯絡資訊</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <div class="pricing-header p-5 pb-md-4 mx-auto text-center"></div>
+            <div class="pricing-header p-5 mx-auto text-center"></div>
 
-    <section class="form pt-5">
-        <p style="font-size:22px;"><strong>有任何問題都歡迎詢問喔</strong></p>
-        <form>
-            <input type="text" placeholder="請輸入您的名字" required>
-            <input type="email" placeholder="請輸入您的email" required>
-            <input type="text" placeholder="請輸入您的問題" required>
-            <button type="submit" class="btn btn-light">送出</button>
-        </form>
-    </section>
+            <section class="form pt-5">
+                <p style="font-size:22px;"><strong>有任何問題都歡迎詢問喔</strong></p>
+                <form>
+                    <input type="text" placeholder="請輸入您的名字" required>
+                    <input type="email" placeholder="請輸入您的email" required>
+                    <input type="text" placeholder="請輸入您的問題" required>
+                    <button type="submit" class="btn btn-outline-secondary">送出</button>
+                </form>
+            </section>
 
-    <div class="pricing-header p-5 pb-md-4 mx-auto text-center"></div>
+            <div class="pricing-header p-5 mb-5"></div>
 
-    <section id=contact class="contact">
-        <div class="profile">
-            <p>If you want to know more about me<br>Please connect email or IG below</p>
-            <p><font color="#c8db72;">Email&ensp;-&ensp;sophieuen007@gmail.com</font></p>
-            <p><font color="#c8db72;">instagram&ensp;-&ensp;uenhanhan</font></p>
-            <a href="https://www.instagram.com/uenhanhan/"><img src="images/instagram.png" width="100%"></a>
-    </section>
+            <section id=contact class="contact">
+                <div class="profile pt-3 pb-3" style="line-height: 2rem;">
+                    <p>If you want to know more about me<br>connect with email or IG below.</p>
+                    <p>
+                        <font color="#c8db72;">Email&ensp;:&ensp;sophieuen007@gmail.com&ensp;&ensp;</font>
+                        <a href="mailto: sophieuen007@gmail.com"><img src="images/gmail.png"></a>
+                    </p>
+                    <p>
+                        <font color="#c8db72;">
+                            instagram&ensp;:&ensp;uenhanhan&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        </font>
+                        <a href="https://www.instagram.com/uenhanhan/"><img src="images/instagram.png"></a>
+                    </p>
+                </div>
+            </section>
+        </div>
 
-    <footer class="pt-4 my-md-4 md-5 border-top">
-        <p>Copyright © 2023 Sophie. All rights reserved.</p>
-    </footer>
+        <footer class="pt-4 md-5" style="position: absolute; bottom: 0; width: 100%; height: 80px;">
+            <p>Copyright © 2023 Sophie. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>

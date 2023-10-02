@@ -5,24 +5,22 @@
   margin: 0;
   font-family: "Noto Sans TC", sans-serif;
 }
+
 header {
   background-color: rgb(44, 44, 61, 0.9);
   height: 80px;
   width: 100%;
   position: fixed;
 }
+
 h1 {
   color: #ffffff;
   position: absolute;
   left: 120px;
   top: 0;
   line-height: 80px;
-  /* background-image: url(images/logo.png);
-  background-size: 10%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 1000px; */
 }
+
 header h2 {
   color: #ffffff;
   position: absolute;
@@ -30,27 +28,33 @@ header h2 {
   top: 0;
   line-height: 80px;
 }
+
 header ul {
   position: absolute;
   right: 5vw;
   top: 0;
   line-height: 80px;
 }
+
 header li {
   display: inline;
   margin-right: 4vw;
 }
+
 header a {
   color: #ffffff;
   text-decoration: none;
 }
+
 header a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #797979;
 }
+
 .cover {
   background-color: antiquewhite;
   color: #ffffff;
-  height: 95vh;
+  height: 100vh;
   background-image: url("images/beach-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,20 +64,28 @@ header a:hover {
   align-items: center;
   justify-content: center;
 }
+
 .cover h3 {
   color: #e2dd90;
   font-size: 40px;
   margin-top: 10px;
+  margin-left: 25px;
+  transform: translateX(10px);
 }
+
 .cover h2 {
   font-size: 80px;
   margin-top: 30px;
+  margin-left: 30px;
 }
+
 .cover p {
   color: #fef7e6;
   font-size: 18px;
   margin: 25px 0;
+  margin-left: 30px;
 }
+
 .cover a {
   color: #ffffff;
   text-decoration: none;
@@ -81,6 +93,7 @@ header a:hover {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
 .motto {
   background-color: #2e598a;
   color: #ffffff;
@@ -92,6 +105,16 @@ header a:hover {
   font-size: 28px;
   line-height: 1.8em;
 }
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 80px;
+}
+
 footer {
   background-color: #000000;
   color: #b7b7b7;
@@ -101,6 +124,7 @@ footer {
   justify-content: center;
   font-size: 14px;
 }
+
 .contact {
   background-color: #09053f;
   color: #ffffff;
@@ -109,27 +133,29 @@ footer {
   justify-content: center;
   font-size: 18px;
 }
-/* .contact img {
-  width: 50%;
-} */
 
 .profile {
   width: 50%;
+  margin-top: 20px;
 }
+
 .profile img {
-  width: 5%;
-  padding: 0 18px 18px 25px;
+  width: 2.5%;
+  align-items: center;
 }
+
 .profile p {
-  line-height: 1.8em;
-  padding: 18px 18px 5px 25px;
+  margin-top: 20px;
 }
+
 .AboutMe {
   display: flex;
 }
+
 .AboutMe img {
   width: 50%;
 }
+
 .introduction {
   width: 50%;
   background-color: #ffffff;
@@ -138,83 +164,74 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 .introduction h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
+
 .introduction p {
   text-align: center;
   line-height: 2em;
 }
+
 .table img {
   width: 50%;
   color: #80b0cf;
 }
+
 .table a {
   text-decoration: none;
 }
-.table a:hover {
-  text-decoration: underline;
+
+.table button {
+  text-decoration: none;
 }
-/* section .important {
-  display: flex;
-  background-color: #80b0cf;
-  align-items: center;
-  justify-content: center;
-  justify-content: flex-start;
-  padding: 100px 180px 80px;
-}
-.text h2 {
-  color: #000000;
-  width: 100%
-  font-size: 30px;
-  margin: 20px 0;
-  align-items: center;
-  justify-content: top;
-}
-section .description {
-  display: flex;
-  flex-wrap:wrap;
-  width: 300px;
-  text-align: center;
-  justify-content: space-around;
-}
+
 .description img {
   width: 100%;
   border-radius: 10px;
 }
+
 .description h3 {
   font-size: 25px;
   margin: 20px 0;
 }
+
 .description p {
   font-size: 16px;
   line-height: 1.6em;
-} */
-.collection {
+}
+
+*/ .collection {
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 100px 180px 80px;
 }
+
 .collection div {
   width: 300px;
   text-align: center;
 }
+
 .collection img {
   width: 45%;
 }
+
 .collection h3 {
   font-size: 25px;
   line-height: 1.5em;
   margin: 20px 0;
 }
+
 .collection p {
   font-size: 16px;
   line-height: 1.5em;
   padding-bottom: 15px;
 }
+
 .collection a {
   color: rgb(80, 79, 79);
   text-decoration: none;
@@ -222,6 +239,7 @@ section .description {
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 .form {
   padding-top: 1000px;
   background-color: #ffffff;
@@ -231,9 +249,11 @@ section .description {
   flex-direction: column;
   align-items: center;
 }
+
 .form p {
   margin-bottom: 20px;
 }
+
 .form input,
 .form button {
   background-color: transparent;
@@ -242,6 +262,7 @@ section .description {
   padding: 10px;
   border-radius: 5px;
 }
+
 .form input {
   width: 200px;
   margin-right: 15px;
@@ -253,7 +274,7 @@ section .description {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5em;
   color: #212529;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -270,13 +291,11 @@ section .description {
   justify-content: center;
   margin-top: 15%;
 }
+
 input::placeholder {
   color: #b8b8b8;
 }
-input::focus {
-  outline: none;
-  border-color: #e0e9a3;
-}
+
 .menu {
   display: none;
 }
@@ -285,9 +304,11 @@ input::focus {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -298,13 +319,16 @@ input::focus {
   header ul {
     display: none;
   }
-  header h1 {
+
+  header h2 {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .news h2 {
     font-size: 40px;
   }
+
   .menu {
     display: block;
     background-color: transparent;
@@ -313,26 +337,31 @@ input::focus {
     position: absolute;
     top: 15px;
     left: 20px;
-    /* border: none; */
     cursor: pointer;
   }
+
   .AboutMe {
     flex-direction: column;
   }
+
   .AboutMe img {
     width: 100%;
   }
+
   .introduction {
     width: 100%;
     padding: 40px 0;
   }
+
   .introduction h2 {
     font-size: 30px;
   }
+
   .important {
     flex-direction: column;
     padding: 60px 0;
   }
+
   .important div {
     margin-bottom: 30px;
   }
